@@ -1,0 +1,25 @@
+
+abstract class Animal {
+    abstract String talk();
+}
+ 
+class Cat extends Animal {
+    String talk() {
+        return "Meow!";
+    }
+}
+ 
+class Dog extends Animal {
+    String talk() {
+        return "Woof!";
+    }
+}
+ 
+void letsHear(Animal a) {
+    println(a.talk());
+}
+ 
+void main() {
+    letsHear(new Cat());
+    letsHear(new Dog());
+}
