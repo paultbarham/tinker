@@ -1,5 +1,5 @@
-// ConsoleApplication1.cpp : Defines the entry point for the console application.
-//
+// ConsoleApplication for tinkering
+// Paul T. Barham
 
 #include "stdafx.h"
 #include <iostream>
@@ -39,10 +39,14 @@ int _tmain(int argc, _TCHAR* argv[])
 	Cat *c;
 	Dog *d;
 
+	std::cerr << "Creating one Cat and one Dog object" << std::endl;
+
 	c = new Cat();
 	d = new Dog();
 	letsHear(c);
 	letsHear(d); 
+
+	std::cerr << "Deleting one Cat and one Dog object" << std::endl;
 	delete c;
 	delete d;
 
