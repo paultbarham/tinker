@@ -1,9 +1,10 @@
 // ConsoleApplication for tinkering
 // Paul T. Barham
 
-#include "stdafx.h"
+#include <stdio.h>
 #include <iostream>
 #include <stdlib.h>
+#include "tchar.h"
 
 
 class Animal {
